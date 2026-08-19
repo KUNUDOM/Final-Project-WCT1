@@ -1,0 +1,128 @@
+.admin-header {
+  margin-bottom: 24px;
+}
+
+.admin-user {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.admin-form {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  position: sticky;
+  top: 90px;
+}
+
+.admin-form h3 {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.admin-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.admin-form-actions .btn-primary,
+.admin-form-actions .btn-secondary {
+  flex: 1;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.admin-list {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.admin-list h3 {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.admin-empty {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+.td-emoji {
+  font-size: 1.3rem;
+  width: 40px;
+}
+
+.td-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.td-actions button {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.td-actions button:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.td-actions button.danger:hover {
+  border-color: #a12f2f;
+  color: #a12f2f;
+}
+
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form {
+    position: static;
+  }
+}

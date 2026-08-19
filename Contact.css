@@ -1,0 +1,45 @@
+.contact-page h1 {
+  max-width: 620px;
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+}
+
+.contact-form {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-item {
+  border-left: 3px solid var(--brand);
+  padding-left: 16px;
+}
+
+.info-item h3 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.info-item p {
+  color: var(--ink-soft);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

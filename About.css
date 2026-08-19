@@ -1,0 +1,67 @@
+.about-page h1 {
+  max-width: 640px;
+  font-size: 2.25rem;
+}
+
+.about-intro {
+  color: var(--ink-soft);
+  max-width: 680px;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.value-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px;
+}
+
+.value-card h3 {
+  color: var(--brand);
+  font-size: 1.05rem;
+}
+
+.value-card p {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-stats {
+  display: flex;
+  gap: 48px;
+  padding: 36px;
+  background: var(--cream);
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.about-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-stats strong {
+  font-size: 2rem;
+  color: var(--brand);
+  font-family: "Playfair Display", serif;
+}
+
+.about-stats span {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
